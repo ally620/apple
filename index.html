@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>松鼠接蘋果</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="game-shell">
+    <h1>🍎 松鼠接蘋果 🍎</h1>
+    <div class="panel" aria-live="polite"><span class="stat">分數：<b id="score">0</b></span><span class="stat">剩餘心心：<b id="hearts" class="heart">♥ ♥ ♥</b></span></div>
+    <section class="stage" id="stage" aria-label="松鼠接蘋果遊戲畫面">
+      <div class="sun"></div><div class="cloud a"></div><div class="cloud b"></div><div class="hills"></div><div class="tree"><div class="leaves"></div><div class="trunk"></div></div>
+      <div class="squirrel" id="squirrel" aria-hidden="true"><div class="tail"></div><div class="body"></div><div class="head"><div class="ear one"></div><div class="ear two"></div><i class="eye one"></i><i class="eye two"></i><i class="nose"></i></div></div>
+      <div class="ground"></div><div class="player" id="player" aria-label="揹著籃子的玩家"><div class="head"></div><div class="hair"></div><div class="body"></div><div class="basket"></div></div>
+      <div class="message" id="message"><div class="message-box"><h2 id="messageTitle">準備好了嗎？</h2><p id="messageText">接住蘋果，避開栗子！</p></div></div>
+    </section>
+    <div class="controls"><button class="btn" id="startBtn" type="button">開始遊戲</button><button class="btn secondary" id="restartBtn" type="button">重新開始</button><button class="btn secondary move" id="leftBtn" type="button" aria-label="向左移動">◀</button><button class="btn secondary move" id="rightBtn" type="button" aria-label="向右移動">▶</button></div>
+    <p class="hint">使用 ← → 鍵或下方按鈕，接蘋果加分；接到栗子或漏掉蘋果會扣心！</p>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>
